@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Head from 'next/head'
 
 import Link from 'next/link';
 import { getCategories } from '../services';
@@ -14,10 +15,14 @@ const Header = () => {
 
   return (
     <div className="container mx-auto px-10 mb-8">
+      <Head>
+        <title>Worship Now</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="border-b w-full inline-block border-blue-400 py-8">
         <div className="md:float-left block">
           <Link href="/">
-            <span className="cursor-pointer font-bold text-4xl text-white">Graph CMS</span>
+            <span className="cursor-pointer font-bold text-4xl text-white">Worship Now</span>
           </Link>
         </div>
         <div className="hidden md:float-left md:contents">
